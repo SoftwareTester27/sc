@@ -450,7 +450,7 @@ a.c:hover .nameprice {
 }
 
 .courseimage {
-    background: url("C:/Users/Developer Kartik/Pictures/microsoft-surface-duo-2-3840x2160-android-12l-microsoft-4k-24833.jpg");
+    background: url("Images/microsoft-surface-duo-2-3840x2160-android-12l-microsoft-4k-24833.jpg");
     background-size: cover;
     border-radius: 50px;
 }
@@ -488,7 +488,7 @@ a.c:hover .nameprice {
 
 .priceBox{
     /* background-color: var(--main-color-dark); */
-    background: url("C:/Users/Developer Kartik/Pictures/microsoft-surface-duo-2-3840x2160-android-12l-microsoft-4k-24834.jpg");
+    background: url("Images/microsoft-surface-duo-2-3840x2160-android-12l-microsoft-4k-24834.jpg");
     background-size: cover;
     z-index: 5;
     background-repeat: no-repeat;
