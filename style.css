@@ -22,7 +22,7 @@ body {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     background-color: var(--main-color-all);
-    background-image: url("C:/Users/Developer Kartik/Pictures/android-p-2560x1440-stock-android-9-0-pistachio-ice-cream-4k-18181.jpg") center;
+    background-image: url("Images/android-p-2560x1440-stock-android-9-0-pistachio-ice-cream-4k-18181.jpg") center;
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -309,7 +309,7 @@ a .button_1 {
 
     color: linear-gradient(90deg, #000, #fff);
     /* background-color: rgb(60, 91, 184); */
-    background: url("C:/Users/Developer Kartik/Pictures/android-p-2560x1440-stock-android-9-0-pistachio-ice-cream-4k-18181.jpg");
+    background: url("Images/android-p-2560x1440-stock-android-9-0-pistachio-ice-cream-4k-18181.jpg");
     background-size: cover;
     background-position: center;
     backdrop-filter: blur(30px);
