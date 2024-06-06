@@ -1,0 +1,868 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --main-blue-all: #00ffff;
+    --main-dark-bg: rgba(30, 41, 58, 1);
+    --dark-purple-color: rgb(2, 16, 82);
+    --main-color-dark: #1b1c20;
+    --main-color-all: rgb(30, 32, 42);
+    --standard-blue-color: #007fff;
+    --main-blue-light: #0080ff80;
+    --grad: linear-gradient(90deg, rgba(0,127,255,1) 0%, rgba(164,0,255,1) 100%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--main-color-all);
+    background-image: url("C:/Users/Developer Kartik/Pictures/android-p-2560x1440-stock-android-9-0-pistachio-ice-cream-4k-18181.jpg") center;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: auto;
+    color: #fff;
+}
+/* 
+.main {
+    background: url("C:/Users/Developer Kartik/Pictures/android-p-2560x1440-stock-android-9-0-pistachio-ice-cream-4k-18181.jpg") no-repeat;
+    background-position: unset;
+    background-size: cover;
+} */
+
+/* ------------------Common CSS Stylings --------------------- */
+
+.progress-bar {
+    height: 8px;
+    background: rgb(0,127,255);
+    background: linear-gradient(90deg, rgba(0,127,255,1) 0%, rgba(164,0,255,1) 100%);
+    width: 0%;
+    margin-top:98.9vh;
+    z-index: 100;
+    position: fixed;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.maxWidthAll{
+    max-width: 1180px;
+    padding: 0 40px;
+}
+
+.marginAuto {
+    margin: auto;
+}
+
+.smallText {
+    font-size: 1rem;
+    color: #ffffffa8;
+    margin: 3px 0;
+    line-height: 26px;
+}
+
+.regularText {
+    font-size: 1.375rem;
+    color: white;
+    font-weight: 400;
+    margin: 6px 0;
+}
+
+.normalText {
+    font-size: 1rem;
+    color: white;
+    font-weight: 400;
+    margin: 6px 0;
+}
+
+h1.title {
+    font-size: 5rem;
+    width: 900px;
+    color: linear-gradient(0deg, #000, #fff);
+    animation: animHero 4s infinite ease-in-out;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.bigText {
+    font-size: 2.125rem;
+    color: white;
+    font-weight: 400;
+    margin: 0px 0;
+}
+
+
+/* -------------------------Navbar Styling --------------------- */
+
+header {
+    width: 100%;
+    /* box-shadow: 0px 0px 12px #000000ad; */
+    position: fixed;
+    /* background-color: var(--main-color-all); */
+    background: rgba(0, 0, 0, 0.164);
+    /* background-color: #000; */
+    backdrop-filter: blur(30px);
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    max-width: 1380px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    height: 60px;
+    position: relative;
+    font-size: 0.5em;
+}
+
+.logo {
+    height: 46px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    transition: .4s;
+}
+
+.navbar ul li {
+    list-style: none;
+    color: white;
+    margin-left: 26px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: .4s;
+}
+
+.navbar i {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    align-self: center;
+
+}
+
+.navbar ul li:hover {
+    color: rgb(0, 153, 255);
+}
+
+
+/* ------------------------- Home Styling ------------------- */
+
+.aboutContainer {
+    animation: animHero 4s infinite ease-in-out;
+}
+
+.homeContainer {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    padding-bottom: 1rem;
+}
+
+.homeContainer div{
+    width: 50%;
+}
+
+.textBoxHome h1 span{
+    color: var(--main-blue-all);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textBoxHome p.smallText {
+    animation: animHero 4s infinite ease-in-out;
+    margin-left: 95px;
+}
+
+.textBoxHome button.button_1 {
+    animation: animHero 4s infinite ease-in-out;
+    margin-left: 65px;
+    /* box-shadow: 10px 10px 10px 0px rgba(0, 128, 255, 0.411); */
+    /* border: rgba(0, 128, 255, 0.171) solid 2px; */
+    box-shadow: 0 0 40px rgb(0, 128, 255);
+    /* position: relative; */
+    /* background-color: transparent; */
+    /* z-index: 0; */
+
+    &:hover {
+        scale: 1.1;
+    }
+
+    /* &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        background-color: #fff;
+        z-index: -1;
+        transition: translate 200ms;
+    }
+
+    &:hover,
+    &:focus-visible {
+        translate: 0 -.5rem;
+        background: coral;
+
+        &::after {
+            translate: 0 .65rem;
+            /* z-index: -1; 
+        }
+    } */
+}
+
+.gradtext {
+    color: linear-gradient(0deg, #00ff2a, #ff0000);
+}
+
+#vsd {
+    color: linear-gradient(90deg, #000, #fff);
+    /* background-color: rgb(40, 42, 48); */
+    backdrop-filter: blur(30px);
+    background: #4242420a;
+    border-radius: 20px;
+    padding: 20px;
+    width: 92.5%;
+    height: 100%;
+}
+
+#vsd2 {
+    /* background-color: rgb(40, 42, 48); */
+    backdrop-filter: blur(30px);
+    background: #4242420a;
+    border-radius: 20px;
+    padding: 20px;
+    width: 92.5%;
+    height: 100%;
+}
+
+.button_1{
+    outline: none;
+    /* border: 2px solid var(--standard-blue-color); */
+    padding: 10px 20px;
+    /* background-color: var(--standard-blue-color); */
+    background: rgb(0,127,255);
+    background: linear-gradient(90deg, rgba(0,127,255,1) 0%, rgba(164,0,255,1) 100%);
+    border: 0px;
+    color: white;
+    margin-top: 12px;
+    border-radius: 100px;
+    font-size: 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+a .button_1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.button_1:hover{
+    background-color: #0073e6;
+}
+
+.imgBoxHome img{
+    /* width: 100%; */
+    animation: animHero 4s infinite ease-in-out;
+    padding-left: 255px;
+}
+
+@keyframes animHero {
+    0%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(60px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
+
+
+/* ------------------- Codefest Container ---------------------- */
+
+.codeFestContainer{
+    width: 1100px;
+    margin: 10px 10px 0% 10%;
+    display: flex;
+    padding: 0px 0px;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    justify-content: center;
+    /* border-radius: 4px; */
+    /* background-color: var(--standard-blue-color); */
+
+    color: linear-gradient(90deg, #000, #fff);
+    /* background-color: rgb(60, 91, 184); */
+    background: url("C:/Users/Developer Kartik/Pictures/android-p-2560x1440-stock-android-9-0-pistachio-ice-cream-4k-18181.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(30px);
+    /* background-color: var(--standard-blue-color); */
+    border-radius: 30px;
+    /* padding: 20px; */
+}
+
+.codeFestContainer img{
+    height: 270px;
+}
+
+.codeFestContainer p{
+    width: 50%;
+}
+
+.codeFestContainer span{
+    color: rgba(255,255,255,0.7);
+    font-size: .8em;
+}
+
+
+
+/* -------------------- Course Styling ------------------- */
+
+.courseSection{
+    padding-top: 0rem;
+    margin-bottom: 0em;
+}
+
+a.a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a.a .nameprice{
+    display: none;
+    transition: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.a:hover .price {
+    /* display: none; */
+    transition: 0.3s;
+}
+
+a.a:hover .nameprice {
+    display: inline;
+    transition: 0.3s;
+}
+
+a.b {
+    text-decoration: none;
+}
+
+a.b .nameprice{
+    display: none;
+    transition: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.b:hover .price {
+    /* display: none; */
+}
+
+a.b:hover .nameprice {
+    display: inline;
+}
+
+a.c {
+    text-decoration: none;
+}
+
+a.c .nameprice{
+    display: none;
+    transition: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.c:hover .price {
+    /* display: none; */
+}
+
+a.c:hover .nameprice {
+    display: inline;
+}
+
+.mainHeading{
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.mainHeading:hover {
+    &::after {
+        scale: 1.1;
+        transition: 0.3s;
+        margin-left: 5%;
+    }
+}
+
+.mainHeading::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    /* padding-top: 10px; */
+    margin: 0px;
+    bottom: -6px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.001);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -2;
+    border: rgba(0, 128, 255, 0.411) solid 2px;
+    box-shadow: 0 0 50px rgba(0,127,255,1);
+    transition: 0.3s;
+}
+
+.courseContainer{
+    background: rgba(0, 0, 0, 0.001);
+    /* background-color: #000; */
+    backdrop-filter: blur(20px);
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 50px;
+    margin-top: 4rem;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.courseimage {
+    background: url("C:/Users/Developer Kartik/Pictures/microsoft-surface-duo-2-3840x2160-android-12l-microsoft-4k-24833.jpg");
+    background-size: cover;
+    border-radius: 50px;
+}
+
+.course{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.course img{
+    width: 250px;
+}
+
+.course .courseSalary{
+    background: rgb(0,127,255);
+    background: linear-gradient(90deg, rgba(0,127,255,1) 0%, rgba(164,0,255,1) 100%);
+    padding: 20px 30px 20px 30px;
+    font-size: 1.4em;
+    border-radius: 20px;
+}
+
+.pricing{
+    padding-top: 5rem;
+}
+
+.pricingContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    margin-top: 4rem;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.priceBox{
+    /* background-color: var(--main-color-dark); */
+    background: url("C:/Users/Developer Kartik/Pictures/microsoft-surface-duo-2-3840x2160-android-12l-microsoft-4k-24834.jpg");
+    background-size: cover;
+    z-index: 5;
+    background-repeat: no-repeat;
+    padding: 20px 16px;
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    transition: .4s;
+    animation: fade-in linear;
+    animation-timeline: view(700px 0px);
+}
+
+@media (prefers-reduced-motion: no-preference){
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+            scale: 0.5;
+        }
+        to {
+            opacity: 1;
+            scale: 1;
+        }
+    }
+}
+
+@media (prefers-reduced-motion: no-preference){
+    .priceBox:hover{
+        background-color: #1e1f24;
+        scale: 1.1;
+        
+    }
+}
+
+.priceBox h1{
+    /* border: 1px dashed white; */
+    padding-bottom: 12px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.priceBox p{
+    width: 100%;
+    background-color: var(--standard-blue-color);
+    text-align: center;
+    padding: 6px 0px;
+    font-size: 20px;
+}
+
+.priceBox button{
+    align-self: center;
+    background: rgb(0,127,255);
+    background: linear-gradient(90deg, rgba(0,127,255,1) 0%, rgba(164,0,255,1) 100%);
+}
+
+
+/* ------------------------- About Us Styling --------------------- */
+
+.about_us{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.aboutContainer{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutContainer img{
+    width: 45%;
+}
+
+.aboutContainer p{
+    width: 45%;
+    font-size: 18px;
+}
+
+.aboutContainer span{
+    background-color: var(--main-blue-light);
+}
+
+
+
+/* ------------------------ Count Styling --------------------- */
+
+.count{
+    background-color: var(--main-dark-bg);
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    text-align: center;
+    border-radius: 4px;
+}
+
+.count div h1{
+    font-size: 2.1rem;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.count div p{
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+/* ------------------------- Contact Us Styling -------------------- */
+
+.contact_us{
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.contact_us p{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 28px;
+}
+
+.contact_us form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_us form div{
+    position: relative;
+    max-width: 550px;
+    width: 100%;
+    margin: 8px 0;
+    background-color: transparent;
+    border: 2px solid var(--standard-blue-color);
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.contact_us form div i{
+    color: var(--standard-blue-color);
+    font-size: 16px;
+    margin-left: 6px;
+    position: absolute;
+    top: 16px;
+    left: 10px;
+}
+
+.contact_us form div input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 8px 8px 8px 32px;
+    font-size: 14px;
+    color: white;
+}
+
+#contactTextArea{
+    width: 120%;
+    resize: none;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 8px 8px 8px 32px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+
+#contactTextArea::-webkit-scrollbar{
+    display: none;
+}
+
+.contact_us form button{
+    max-width: 550px;
+    width: 100%;
+}
+
+.contact_us img{
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 20vw;
+    animation: animMessage 2s linear infinite;
+}
+
+@keyframes animMessage {
+    0%{
+        transform: translateY(20px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+
+
+/* ------------------------- FAQ Styling --------------------- */
+
+.faq{
+    padding-top: 7rem;
+}
+
+.faq .mainHeading{
+    margin-bottom: 3rem;
+}
+
+.faqBox{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.faqBox .qnaDiv{
+    border: rgba(0, 128, 255, 0.411) solid 2px;
+    box-shadow: 0 0 20px rgba(0,127,255,1);
+    padding: 6px 22px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+.faqBox h1{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 6px 0;
+}
+
+.faqBox .fa-caret-up{
+    display: none;
+}
+
+.faqBox.open .fa-caret-up{
+    display: flex;
+}
+
+.faqBox.open .fa-caret-down{
+    display: none;
+}
+
+.faqBox .ansDiv{
+    background-color: var(--main-dark-bg);
+    box-sizing: border-box;
+    height: 0px;
+    overflow: hidden;
+    transition: .3s;
+    border-radius: 20px;
+    border: rgba(0, 128, 255, 0) solid 2px;
+    box-shadow: 0 0 20px rgba(0,127,255,1);
+    z-index: -3;
+}
+
+.faqBox.open .ansDiv{
+    padding: 14px 22px;
+    height: auto;
+}
+
+.faqBox p{
+    margin: 0px;
+    overflow: hidden;
+}
+
+
+/* ---------------------- Footer Styling ------------------ */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footerContainer{
+    display: flex;
+    padding-top: 7rem;
+    padding-bottom: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footerDiv{
+    align-items: center;
+    width: 33%;
+}
+
+footer .navigatingFooterLinks{
+    text-align: center;
+}
+
+footer .navigatingFooterLinks p{
+    margin-bottom: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+footer .navigatingFooterLinks p:hover{
+    color: var(--main-blue-all);
+}
+
+footer .footerDiv:nth-child(3) p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.socialLinks{
+    text-align: center;
+}
+
+.socialLinks i{
+    margin: 0px 12px;
+    cursor: pointer;
+    transition: .3s;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.socialLinks i:nth-child(1):hover{
+    color: #DD2A7B;
+}
+.socialLinks i:nth-child(2):hover{
+    color: #00ACEE;
+}
+.socialLinks i:nth-child(3):hover{
+    color: #5865F2;
+}
+.socialLinks i:nth-child(4):hover{
+    color: #e62117;
+}
+
+
+.reveal{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: .4s;
+    position: relative;
+}
+
+.reveal.active{
+    opacity: 1;
+    transform: translateY(0px);    
+}
+
+.copyRight{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+ /* Scroll Bar Styling ------------ */
+
+ ::-webkit-scrollbar{
+    width: 10px;
+    background-color: var(--main-color-all);
+ }
+
+ ::-webkit-scrollbar-thumb{
+    background: rgb(0, 119, 255);
+    border-radius: 10px;
+ }
+
+ ::-webkit-scrollbar-thumb:hover{
+    background: rgb(0, 99, 212);
+ }
