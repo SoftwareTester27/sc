@@ -30,7 +30,7 @@ body {
     box-sizing: border-box;
     font-family: 'Poppins', Bahnschrift;
     background-color: var(--main-color-all);
-    background: url("C:/Users/DeveloperKartik/Pictures/Extras/Abstract-Blue-Purple.jpg") center;
+    background: url("Abstract-Blue-Purple.jpg") center;
     background-size: 160%;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -323,7 +323,7 @@ a .button_1 {
 
     color: linear-gradient(90deg, #000, #fff);
     /* background-color: rgb(60, 91, 184); */
-    background: url("C:/Users/DeveloperKartik/Pictures/Abstract/8.jpg");
+    background: url("./8.jpg");
     background-size: cover;
     background-position: center;
     backdrop-filter: blur(30px);
@@ -512,7 +512,7 @@ a.c:hover .nameprice {
 
 .priceBox{
     /* background-color: var(--main-color-dark); */
-    background: url("C:/Users/DeveloperKartik/Pictures/Extras/Abstract-Blue.jpg");
+    background: url("Abstract-Blue.jpg");
     background-size: cover;
     z-index: 5;
     background-repeat: no-repeat;
