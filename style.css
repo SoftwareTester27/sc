@@ -10,6 +10,14 @@
     --standard-blue-color: #007fff;
     --main-blue-light: #0080ff80;
     --grad: linear-gradient(90deg, rgba(0,127,255,1) 0%, rgba(164,0,255,1) 100%);
+    --red: #FF6565;
+    --pink: #FF64F9;
+    --purple: #6B5FFF;
+    --blue: #4D8AFF;
+    --green: #5BFF89;
+    --yellow: #FFEE55;
+    --orange: #FF6D1B;
+    --m: 4rem;
 }
 
 html {
@@ -22,32 +30,35 @@ body {
     box-sizing: border-box;
     font-family: 'Poppins', Bahnschrift;
     background-color: var(--main-color-all);
-    background-image: url("C:/Users/Developer Kartik/Pictures/android-p-2560x1440-stock-android-9-0-pistachio-ice-cream-4k-18181.jpg") center;
-    /* background-attachment: fixed; */
-    background-repeat: no-repeat;
+    background: url("C:/Users/DeveloperKartik/Pictures/Extras/Abstract-Blue-Purple.jpg") center;
+    background-size: 160%;
     background-attachment: fixed;
-    overflow: auto;
+    background-repeat: no-repeat;
     color: #fff;
 }
-/* 
-.main {
-    background: url("C:/Users/Developer Kartik/Pictures/android-p-2560x1440-stock-android-9-0-pistachio-ice-cream-4k-18181.jpg") no-repeat;
-    background-position: unset;
-    background-size: cover;
-} */
+
+.main{
+    backdrop-filter: blur(50px);
+    height: 100%;
+}
+
+a.navsignin{
+    text-decoration: none;
+}
 
 /* ------------------Common CSS Stylings --------------------- */
 
 .progress-bar {
     height: 8px;
     background: rgb(0,127,255);
-    background: linear-gradient(90deg, rgba(0,127,255,1) 0%, rgba(164,0,255,1) 100%);
+    background: linear-gradient(90deg, rgba(0,127,255,1) 0%, rgb(0, 255, 191) 100%);
     width: 0%;
     margin-top:98.9vh;
     z-index: 100;
     position: fixed;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    position: fixed;
 }
 
 .maxWidthAll{
@@ -102,12 +113,14 @@ h1.title {
 header {
     width: 100%;
     /* box-shadow: 0px 0px 12px #000000ad; */
-    position: fixed;
+    position: sticky;
     /* background-color: var(--main-color-all); */
     background: rgba(0, 0, 0, 0.164);
     /* background-color: #000; */
     backdrop-filter: blur(30px);
     z-index: 10;
+    position: fixed;
+    top: 0;
 }
 
 .navbar {
@@ -253,7 +266,7 @@ header {
     padding: 10px 20px;
     /* background-color: var(--standard-blue-color); */
     background: rgb(0,127,255);
-    background: linear-gradient(90deg, rgba(0,127,255,1) 0%, rgba(164,0,255,1) 100%);
+    background: linear-gradient(90deg, rgba(0,127,255,1) 0%, rgb(0, 255, 191) 100%);
     border: 0px;
     color: white;
     margin-top: 12px;
@@ -310,7 +323,7 @@ a .button_1 {
 
     color: linear-gradient(90deg, #000, #fff);
     /* background-color: rgb(60, 91, 184); */
-    background: url("C:/Users/Developer Kartik/Pictures/android-p-2560x1440-stock-android-9-0-pistachio-ice-cream-4k-18181.jpg");
+    background: url("C:/Users/DeveloperKartik/Pictures/Abstract/8.jpg");
     background-size: cover;
     background-position: center;
     backdrop-filter: blur(30px);
@@ -461,7 +474,7 @@ a.c:hover .nameprice {
 }
 
 .courseimage {
-    background: url("C:/Users/Developer Kartik/Pictures/microsoft-surface-duo-2-3840x2160-android-12l-microsoft-4k-24833.jpg");
+    background: url("C:/Users/DeveloperKartik/Pictures/Extras/Abstract-Blue.jpg");
     background-size: cover;
     border-radius: 50px;
 }
@@ -479,7 +492,7 @@ a.c:hover .nameprice {
 
 .course .courseSalary{
     background: rgb(0,127,255);
-    background: linear-gradient(90deg, rgba(0,127,255,1) 0%, rgba(164,0,255,1) 100%);
+    background: linear-gradient(90deg, rgba(0,127,255,1) 0%, rgb(0, 255, 191) 100%);
     padding: 20px 30px 20px 30px;
     font-size: 1.4em;
     border-radius: 20px;
@@ -499,7 +512,7 @@ a.c:hover .nameprice {
 
 .priceBox{
     /* background-color: var(--main-color-dark); */
-    background: url("C:/Users/Developer Kartik/Pictures/microsoft-surface-duo-2-3840x2160-android-12l-microsoft-4k-24834.jpg");
+    background: url("C:/Users/DeveloperKartik/Pictures/Extras/Abstract-Blue.jpg");
     background-size: cover;
     z-index: 5;
     background-repeat: no-repeat;
@@ -552,7 +565,7 @@ a.c:hover .nameprice {
 .priceBox button{
     align-self: center;
     background: rgb(0,127,255);
-    background: linear-gradient(90deg, rgba(0,127,255,1) 0%, rgba(164,0,255,1) 100%);
+    background: linear-gradient(90deg, rgba(0,127,255,1) 0%, rgb(0, 255, 191) 100%);
 }
 
 
@@ -875,3 +888,49 @@ footer .footerDiv:nth-child(3) p{
  ::-webkit-scrollbar-thumb:hover{
     background: rgb(0, 99, 212);
  }
+
+ button.glowingsignin {
+    border: calc(0.08 * var(--m)) solid transparent;
+    position: relative;
+    color: #F3F3F3;
+    font-size: 1.4em;
+    border-radius: calc(0.7 * var(--m));
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    
+    background:linear-gradient(#121213, #121213), linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),  linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
+    background-origin: border-box;
+    background-clip: padding-box, border-box, border-box;
+    background-size: 200%;
+    animation: animate 2s infinite linear;
+  }
+  
+  button.glowingsignin::before {
+    content: '';
+    background: linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
+    height: 25%;
+    width: 60%;
+    position: absolute;
+    bottom: -10%;
+    z-index: 10;
+    background-size: 200%;
+    animation: animate 2s infinite linear;
+    filter: blur(calc(0.8 * var(--m)));
+  }
+  
+  button.glowingsignin:hover, button.glowingsignin:hover::before {
+    animation: animate 0.5s infinite linear;
+  }
+  
+  @keyframes animate {
+    0% {background-position: 0}
+    100% {background-position: 200%}
+  }
+  
+  @media screen and (max-width: 1000px) {
+    :root {
+      --m: 2rem;
+    }
+  }

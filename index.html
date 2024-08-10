@@ -11,22 +11,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
 </head>
 <body>
+    <div class="progress-bar" id="myBar"></div>
+    <header>
+        <nav class="navbar">
+            <img src="smartlycoded.png" alt="Logo" class="logo navigatingLinks" data-val="Home" draggable="false">
+            <i class="fa-solid fa-bars" id="humburger"></i>
+            <ul id="navSlide">
+                <li class="navigatingLinks" data-val="Home">Home</li>
+                <a href="SignIn/index.html" class="navsignin">
+                    <li class="navigatingLinks" data-val="Home">Sign In</li>
+                </a>
+                <li class="navigatingLinks" data-val="Pricing">Products</li>
+                <li class="navigatingLinks" data-val="Courses">Plans</li>
+                <li class="navigatingLinks" data-val="About">About</li>
+                <li class="navigatingLinks" data-val="Contact">Contact</li>
+            </ul>
+        </nav>
+    </header>
     <div class="main">
-        <div class="progress-bar" id="myBar"></div>
-        <header>
-            <nav class="navbar">
-                <img src="smartlycoded.png" alt="Logo" class="logo navigatingLinks" data-val="Home" draggable="false">
-                <i class="fa-solid fa-bars" id="humburger"></i>
-                <ul id="navSlide">
-                    <li class="navigatingLinks" data-val="Home">Home</li>
-                    <li class="navigatingLinks" data-val="Pricing">Products</li>
-                    <li class="navigatingLinks" data-val="Courses">Plans</li>
-                    <li class="navigatingLinks" data-val="About">About</li>
-                    <li class="navigatingLinks" data-val="Contact">Contact</li>
-                </ul>
-            </nav>
-        </header>
-        
         <script>
             // When the user scrolls the page, execute myFunction 
             window.onscroll = function() {myFunction()};
@@ -43,7 +45,8 @@
                 <h1 class="title"><img src="smartlycoded.png" width="75" draggable="false">Smartly Coded</h1>
                 <p class="smallText">Simply Smart
                 </p>
-                <a href="Login/index.html"><button class="button_1">Login in  →</button></a>
+                <!-- <button class="glowingsignin">Login in  →</button> -->
+                <a href="SignIn/index.html"><button class="button_1">Login in  →</button></a>
             </div>
             <div class="imgBoxHome">
                 <img src="Images/robot.png" height="400" width="400" id="Hero" draggable="false">
@@ -55,7 +58,7 @@
                 <p class="regularText">Welcome to Smartly Coded Web! Here you will explore peak productiviy and flexibility. We provide a One-Step solutions to your needs. <br> <span> By CEO, Developer Kartik</span></p>
             </section>
         </div>
-        <section class="pricing maxWidthAll marginAuto reveal" id="Pricing">
+        <section class="pricing maxWidthAll marginAuto reveal" id="Pric ing">
             <h1 class="mainHeading bigText">Top Products</h1>
             <div class="pricingContainer">
                 <div class="priceBox">
