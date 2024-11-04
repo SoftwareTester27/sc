@@ -67,7 +67,7 @@ form.sign-in-form {
 
 .title {
   font-size: 2.2rem;
-  color: #cacaca;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
@@ -88,7 +88,7 @@ form.sign-in-form {
 .input-field i {
   text-align: center;
   line-height: 55px;
-  color: #acacac;
+  color: #ffffff;
   transition: 0.5s;
   font-size: 1.1rem;
 }
