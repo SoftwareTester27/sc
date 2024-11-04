@@ -10,7 +10,7 @@
 body,
 input {
   font-family: "Poppins", Bahnschrift;
-  background: url("C:/Users/DeveloperKartik/Pictures/Extras/Abstract-Blue.jpg") center;
+  background: url("../Abstract-Blue.jpg") center;
   background-size:160%;
   background-attachment: fixed;
   background-repeat: no-repeat;
