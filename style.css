@@ -1,0 +1,855 @@
+/* style.css */
+
+:root {
+    --accent-color: #A0C7B5;
+    --accent-color-hover: #ffffff;
+    --main-bg1: #171d19;
+    --main-bg2: #181818;
+    --m: 4rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI Variable', sans-serif;
+    background: linear-gradient(90deg, var(--main-bg1) 0%, var(--main-bg2) 100%);
+    color: #fff;
+}
+
+.main{
+    height: 100%;
+}
+
+a.navsignin{
+    text-decoration: none;
+}
+
+/* ------------------Common CSS Stylings --------------------- */
+
+.maxWidthAll{
+    /* max-width: 1180px; */
+    padding: 0 40px;
+}
+
+.marginAuto {
+    margin: 0 7% 0 7%;
+}
+
+.smallText {
+    font-size: 1rem;
+    color: #ffffffa8;
+    margin: 3px 0;
+    line-height: 26px;
+}
+
+.regularText {
+    font-size: 1.375rem;
+    color: white;
+    font-weight: 400;
+    margin: 6px 0;
+}
+
+.normalText {
+    font-size: 1rem;
+    color: white;
+    font-weight: 400;
+    margin: 6px 0;
+}
+
+h1.title {
+    font-size: 5rem;
+    width: 800px;
+    /*color: linear-gradient(0deg, #000, #fff);*/
+    animation: animHero 4s infinite ease-in-out;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.bigText {
+    font-size: 2.125rem;
+    color: white;
+    font-weight: 400;
+    margin: 0px 0;
+}
+
+
+/* -------------------------Navbar Styling --------------------- */
+
+header {
+    width: 100%;
+    /* box-shadow: 0px 0px 12px #000000ad; */
+    position: sticky;
+    /* background-color: var(--main-color-all); */
+    background: rgba(0, 0, 0, 0.65);
+    /* background-color: #000; */
+    backdrop-filter: blur(100px);
+    -moz-backdrop-filter: blur(100px);
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    /*border-radius: 0 0 15px 15px; !* round bottom edges *!*/
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+
+}
+
+.navbar {
+    display: flex;
+    margin: 0 1.5% 0 1.5%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px;
+    height: 10vh;
+    position: relative;
+    font-size: 0.5em;
+}
+
+.logo {
+    height: 46px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    transition: .4s;
+}
+
+.navbar ul li {
+    list-style: none;
+    color: white;
+    margin-left: 26px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: .4s;
+}
+
+.navbar i {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    align-self: center;
+
+}
+
+.navbar ul li:hover {
+    color: rgb(0, 153, 255);
+}
+
+
+/* ------------------------- Home Styling ------------------- */
+
+.homeContainer {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    padding-bottom: 15vh;
+    justify-content: center;
+    padding-top: 12vh;
+    padding-left: 15vh;
+    padding-right: 15vh;
+    background: url(Abstract-Blue.jpg);
+    background-size: cover;
+    margin: 0;
+}
+
+.homeContainer div{
+    /* width: 50%; */
+}
+
+.textBoxHome h1 span{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textBoxHome p.smallText {
+    /* animation: animHero 4s infinite ease-in-out; */
+    margin-left: 95px;
+}
+
+.textBoxHome button.button_1 {
+
+    &:active {
+        opacity: 0.3;
+    }
+
+}
+
+.gradtext {
+    color: linear-gradient(0deg, #00ff2a, #ff0000);
+}
+
+#vsd {
+    background: #4242420a;
+    border-radius: 20px;
+    padding: 20px;
+    width: 92.5%;
+    height: 100%;
+}
+
+#vsd2 {
+    background: #4242420a;
+    border-radius: 20px;
+    padding: 20px;
+    width: 92.5%;
+    height: 100%;
+}
+
+.button_1{
+    outline: none;
+    padding: 10px 20px;
+    background: var(--accent-color);
+    border: 0px;
+    color: black;
+    font-weight: bold;
+    font-family: "Segoe UI Variable";
+    margin-top: 12px;
+    border-radius: 12px;
+    font-size: 20px;
+    border-width: 3px;
+    border: rgb(217, 255, 195);
+    cursor: pointer;
+    transition: .4s;
+    animation: fade-in linear;
+}
+
+a .button_1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.button_1:hover{
+    background: var(--accent-color-hover);
+    scale: 0.98;
+    transition: .4s;
+    animation: fade-in linear;
+}
+
+.imgBoxHome img{
+    animation: animHero 4s infinite ease-in-out;
+    padding-bottom: 0px;
+    margin-top: 100px;
+    padding: 0 auto;
+}
+
+/* ------------------- Codefest Container ---------------------- */
+
+.codeFestContainer{
+    width: 1100px;
+    margin: 10px 10px 0% calc(100 - 20%);
+    display: flex;
+    padding: 0px 0px;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    justify-content: center;
+    /* color: linear-gradient(90deg, #000, #fff); */
+    border-radius: 30px;
+}
+
+.codeFestContainer img{
+    height: 270px;
+}
+
+.codeFestContainer p{
+    width: 50%;
+}
+
+.codeFestContainer span{
+    color: rgba(255,255,255,0.7);
+    font-size: .8em;
+}
+
+
+
+/* -------------------- Plans Styling ------------------- */
+
+.plansSection{
+    padding-top: 15vh;
+    margin-bottom: 0em;
+}
+
+a.a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a.a .nameprice{
+    display: none;
+    transition: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.a:hover .price {
+    /* display: none; */
+    transition: 0.3s;
+}
+
+a.a:hover .nameprice {
+    display: inline;
+    transition: 0.3s;
+}
+
+a.b {
+    text-decoration: none;
+}
+
+a.b .nameprice{
+    display: none;
+    transition: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.b:hover .nameprice {
+    display: inline;
+}
+
+a.c {
+    text-decoration: none;
+}
+
+a.c .nameprice{
+    display: none;
+    transition: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.c:hover .nameprice {
+    display: inline;
+}
+
+.mainHeading{
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.mainHeading::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    /* padding-top: 10px; */
+    margin: 0px;
+    bottom: -6px;
+    backdrop-filter: blur(15px);
+    background-color: rgba(19, 19, 19, 0.5);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -2;
+    /* box-shadow: 0 0 50px var(--accent-color); */
+    transition: 0.3s;
+}
+.mainHeading:hover::after{
+    box-shadow: 0 0 20px var(--accent-color);
+}
+
+.plansContainer{
+    background: rgba(0, 0, 0, 0.001);
+    /* background-color: #000; */
+    backdrop-filter: blur(20px);
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 50px;
+    margin-top: 4rem;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.plansimage {
+    background: url("C:/Users/DeveloperKartik/Pictures/Extras/Abstract-Blue.jpg");
+    background-size: cover;
+    border-radius: 50px;
+}
+
+.plans{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.plans img{
+    width: 250px;
+}
+
+.plans .plansSalary{
+    background: var(--accent-color);
+    color: black;
+    /* padding: 20px 30px 20px 30px; */
+    padding: 10px 20px;
+    font-size: 1.4em;
+    border-radius: 10px;
+    font-weight: 600;
+    font-family: 'Segoe UI';
+    transition: .4s;
+}
+
+.plans .plansSalary:hover{
+    background: var(--accent-color-hover);
+    transition: .4s;
+}
+
+.products{
+    padding-top: 5rem;
+}
+
+.productsContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    margin-top: 4rem;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+#products{
+    padding-top: 20vh;
+}
+
+.productsBox{
+    /* background-color: var(--main-color-dark); */
+    background: #161616;
+    background-size: cover;
+    z-index: 5;
+    background-repeat: no-repeat;
+    padding: 20px 16px;
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    transition: .4s;
+    animation: fade-in linear;
+    animation-timeline: view(700px 0px);
+}
+
+@media (prefers-reduced-motion: no-preference){
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+            scale: 0.5;
+        }
+        to {
+            opacity: 1;
+            scale: 1;
+        }
+    }
+}
+
+@media (prefers-reduced-motion: no-preference){
+    .productsBox:hover{
+        background-color: #242424;
+        opacity: 0.8;
+        backdrop-filter: blur(10px);
+        
+    }
+}
+
+
+
+.productsBox h1{
+    /* border: 1px dashed white; */
+    padding-bottom: 12px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.productsBox p{
+    width: 100%;
+    background-color: var(--standard-blue-color);
+    text-align: center;
+    padding: 6px 0px;
+    font-size: 20px;
+}
+
+.productsBox button{
+    align-self: center;
+    background: var(--accent-color);
+    color: black;
+    font-weight: 600;
+    font-family: 'Segoe UI Variable';
+}
+
+
+/* ------------------------- About Us Styling --------------------- */
+
+.about_us{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.aboutContainer{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutContainer img{
+    width: 45%;
+}
+
+.aboutContainer p{
+    width: 45%;
+    font-size: 18px;
+}
+
+.aboutContainer span{
+    background-color: var(--main-blue-light);
+}
+
+
+
+/* ------------------------ Count Styling --------------------- */
+
+.count{
+    background-color: var(--main-dark-bg);
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    text-align: center;
+    border-radius: 4px;
+}
+
+.count div h1{
+    font-size: 2.1rem;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.count div p{
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+/* ------------------------- Contact Us Styling -------------------- */
+
+.contact_us{
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.contact_us p{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 28px;
+}
+
+.contact_us form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_us form div{
+    position: relative;
+    max-width: 550px;
+    width: 100%;
+    margin: 8px 0;
+    background-color: transparent;
+    border: 2px solid var(--standard-blue-color);
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.contact_us form div i{
+    color: var(--standard-blue-color);
+    font-size: 16px;
+    margin-left: 6px;
+    position: absolute;
+    top: 16px;
+    left: 10px;
+}
+
+.contact_us form div input{
+    background: transparent;
+    outline: 2px solid var(--accent-color);
+    border-radius: 10px;
+    width: 100%;
+    padding: 8px 8px 8px 32px;
+    font-size: 14px;
+    color: white;
+    border: none;
+}
+
+#contactTextArea{
+    width: 120%;
+    resize: none;
+    background: transparent;
+    outline: 2px solid var(--accent-color);
+    border-radius: 10px;
+    color: white;
+    border: none;
+    padding: 8px 8px 8px 32px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#contactTextArea::-webkit-scrollbar{
+    display: none;
+}
+
+.contact_us form button{
+    max-width: 550px;
+    width: 100%;
+}
+
+.contact_us img{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 20vw;
+    animation: animMessage 2s linear infinite;
+}
+
+@keyframes animMessage {
+    0%{
+        transform: translateY(20px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+
+
+/* ------------------------- FAQ Styling --------------------- */
+
+.faq{
+    padding-top: 7rem;
+}
+
+.faq .mainHeading{
+    margin-bottom: 3rem;
+}
+
+.faqBox{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.faqBox .qnaDiv{
+    border: var(--accent-color) solid 2px;
+    padding: 6px 22px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+.faqBox h1{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 6px 0;
+}
+
+.faqBox .fa-caret-up{
+    display: none;
+}
+
+.faqBox.open .fa-caret-up{
+    display: flex;
+}
+
+.faqBox.open .fa-caret-down{
+    display: none;
+}
+
+.faqBox .ansDiv{
+    background-color: var(--main-dark-bg);
+    box-sizing: border-box;
+    height: 0px;
+    overflow: hidden;
+    transition: .3s;
+    border-radius: 20px;
+    z-index: -3;
+}
+
+.faqBox.open .ansDiv{
+    padding: 14px 22px;
+    height: auto;
+}
+
+.faqBox p{
+    margin: 0px;
+    overflow: hidden;
+}
+
+/* ---------------------- Footer Styling ------------------ */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footerContainer{
+    display: flex;
+    padding-top: 7rem;
+    padding-bottom: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footerDiv{
+    align-items: center;
+    width: 33%;
+}
+
+footer .navigatingFooterLinks{
+    text-align: center;
+}
+
+footer .navigatingFooterLinks p{
+    margin-bottom: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+footer .navigatingFooterLinks p:hover{
+    color: var(--main-blue-all);
+}
+
+footer .footerDiv:nth-child(3) p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.socialLinks{
+    text-align: center;
+}
+
+.socialLinks i{
+    margin: 0px 12px;
+    cursor: pointer;
+    transition: .3s;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.socialLinks i:nth-child(1):hover{
+    color: #DD2A7B;
+}
+.socialLinks i:nth-child(2):hover{
+    color: #00ACEE;
+}
+.socialLinks i:nth-child(3):hover{
+    color: #5865F2;
+}
+.socialLinks i:nth-child(4):hover{
+    color: #e62117;
+}
+
+.reveal{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: .4s;
+    position: relative;
+}
+
+.reveal.active{
+    opacity: 1;
+    transform: translateY(0px);    
+}
+
+.copyRight{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+ /* Scroll Bar Styling ------------ */
+
+ ::-webkit-scrollbar{
+    width: 10px;
+    background-color: var(--main-color-all);
+ }
+
+ ::-webkit-scrollbar-thumb{
+    background: rgb(0, 119, 255);
+    border-radius: 10px;
+ }
+
+ ::-webkit-scrollbar-thumb:hover{
+    background: rgb(0, 99, 212);
+ }
+
+ button.glowingsignin {
+    border: calc(0.08 * var(--m)) solid transparent;
+    position: relative;
+    color: #F3F3F3;
+    font-size: 1.4em;
+    border-radius: calc(0.7 * var(--m));
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    
+    background:linear-gradient(#121213, #121213), linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),  linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
+    background-origin: border-box;
+    background-clip: padding-box, border-box, border-box;
+    background-size: 200%;
+    animation: animate 2s infinite linear;
+  }
+  
+  button.glowingsignin::before {
+    content: '';
+    background: linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
+    height: 25%;
+    width: 60%;
+    position: absolute;
+    bottom: -10%;
+    z-index: 10;
+    background-size: 200%;
+    animation: animate 2s infinite linear;
+    filter: blur(calc(0.8 * var(--m)));
+  }
+  
+  button.glowingsignin:hover, button.glowingsignin:hover::before {
+    animation: animate 0.5s infinite linear;
+  }
+  
+  @keyframes animate {
+    0% {background-position: 0}
+    100% {background-position: 200%}
+  }
+  
+  @media screen and (max-width: 1000px) {
+    :root {
+      --m: 2rem;
+    }
+  }
